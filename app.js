@@ -191,13 +191,31 @@ function getSelectedMenuChoices() {
   return qsa('input[name="menuChoice"]:checked').map((input) => input.value);
 }
 
-function getSelectionProgress() {
-  return qsa("[data-section-key]").map((section) => {
-    const title = qs(".summary-title", section)?.childNodes[0]?.textContent || "";
+function getMenuSelectionSummary() {
+  const selectedGroups = [];
+  const incompleteGroups = [];
+
+  qsa("details[data-section-key]").forEach((section) => {
+    const title = qs(".summary-title", section)?.childNodes[0]?.textContent?.trim() || "Menu";
     const limit = Number(section.dataset.pick || "0");
-    const selected = qsa('input[name="menuChoice"]:checked', section).length;
-    return `${title}: ${selected}/${limit}`;
+    const selected = qsa('input[name="menuChoice"]:checked', section).map((input) =>
+      input.value.replace(`${title}: `, "")
+    );
+
+    if (selected.length) {
+      selectedGroups.push({
+        title,
+        count: `${selected.length}/${limit}`,
+        items: selected
+      });
+    }
+
+    if (limit > 0 && selected.length < limit) {
+      incompleteGroups.push(`${title}: selected ${selected.length}/${limit}, need ${limit - selected.length} more`);
+    }
   });
+
+  return { selectedGroups, incompleteGroups };
 }
 
 function wireWhatsApp() {
@@ -208,9 +226,16 @@ function wireWhatsApp() {
   qs("#enquiry-form").addEventListener("submit", (event) => {
     event.preventDefault();
     const form = new FormData(event.currentTarget);
-    const selectedMenu = getSelectedMenuChoices();
-    const progress = getSelectionProgress();
+    const summary = getMenuSelectionSummary();
     const selectedPackage = form.get("package") || state.selectedPackage || "-";
+    const selectedMenuLines = summary.selectedGroups.length
+      ? summary.selectedGroups
+          .map((group) => [`${group.title} (${group.count})`, ...group.items.map((item) => `- ${item}`)].join("\n"))
+          .join("\n\n")
+      : "Not selected yet / 暂未选择";
+    const incompleteLines = summary.incompleteGroups.length
+      ? summary.incompleteGroups.map((item) => `- ${item}`).join("\n")
+      : "All required menu choices completed. / 必选菜单已选好。";
     const message = [
       "Hi La Taste x 3 Yue, I would like to enquire about buffet catering.",
       "你好，我想询问自助餐活动配套。",
@@ -220,11 +245,11 @@ function wireWhatsApp() {
       `Pax 人数: ${form.get("pax")}`,
       `Package 配套: ${selectedPackage}`,
       "",
-      "Menu selection progress / 菜单选择进度:",
-      progress.length ? progress.map((item) => `- ${item}`).join("\n") : "- Not selected yet / 暂未选择",
+      "Menu choices / 菜单选择:",
+      selectedMenuLines,
       "",
-      "Selected menu choices / 已选择菜单:",
-      selectedMenu.length ? selectedMenu.map((item) => `- ${item}`).join("\n") : "- Not selected yet / 暂未选择",
+      "Incomplete / 未选够:",
+      incompleteLines,
       "",
       `Message 备注: ${form.get("message") || "-"}`
     ].join("\n");
