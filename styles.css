@@ -254,6 +254,13 @@ a {
   font-weight: 750;
 }
 
+#menu:not(.menu-ready) .section-copy h2,
+#menu:not(.menu-ready) .menu-select-note,
+#menu:not(.menu-ready) .section-zh,
+#menu:not(.menu-ready) #menu-sections {
+  display: none;
+}
+
 .highlight-grid,
 .package-grid,
 .accordion,

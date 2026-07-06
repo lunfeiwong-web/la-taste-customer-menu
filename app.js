@@ -39,7 +39,7 @@ function renderPackages(packages) {
   const menuSelect = qs("#menu-package-select");
   root.innerHTML = "";
   formSelect.innerHTML = '<option value="">Select package / 选择配套</option>';
-  menuSelect.innerHTML = "";
+  menuSelect.innerHTML = '<option value="">Select package to view menu / 选择配套后查看菜单</option>';
 
   packages.forEach((pkg) => {
     const card = createElement("article", "package-card");
@@ -81,7 +81,7 @@ function renderPackages(packages) {
     menuSelect.append(menuOption);
   });
 
-  formSelect.addEventListener("change", (event) => setPackage(event.target.value || packages[0].name));
+  formSelect.addEventListener("change", (event) => setPackage(event.target.value));
   menuSelect.addEventListener("change", (event) => setPackage(event.target.value));
 }
 
@@ -108,11 +108,13 @@ function updatePickState(sectionKey) {
 function renderPackageMenu(packageName) {
   const root = qs("#menu-sections");
   const note = qs("#menu-package-note");
+  const menuSection = qs("#menu");
   const packageMenu = state.data.packageMenus?.[packageName];
 
   root.innerHTML = "";
+  menuSection.classList.toggle("menu-ready", Boolean(packageMenu));
   if (!packageMenu) {
-    note.textContent = "Please select a package first. | 请先选择配套。";
+    note.textContent = "";
     return;
   }
 
@@ -240,7 +242,7 @@ function render(data) {
 
   renderHighlights(data.highlights);
   renderPackages(data.packages);
-  setPackage(data.packages[0].name);
+  renderPackageMenu("");
   renderGallery(data.gallery);
   renderTerms(data.terms);
   wireWhatsApp();
