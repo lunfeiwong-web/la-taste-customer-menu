@@ -290,5 +290,677 @@
     "Reservation is suggested 5 days before the event with 30% deposit. | 建议活动前 5 天预订，并支付 30% 订金。",
     "All prices exclude 10% service charge. | 所有价格不含 10% 服务费。",
     "Pictures are for illustration purposes only. Ingredients may vary based on seasonal availability. | 图片仅供参考，食材会根据季节供应而调整。"
-  ]
+  ],
+  "packageMenus": {
+    "Basic Package A": {
+      "label": "Basic Package A / 基础配套 A",
+      "note": "Food x 9 items, dessert x 2 items, beverage x 1. Canape and seafood premium choices are not included in this package. | 主食/小吃 9 项、甜品 2 项、饮料 1 项；此配套不包含高级 Canape 和海鲜选择。",
+      "sections": [
+        {
+          "title": "Soup",
+          "titleZh": "汤品",
+          "note": "Included | 固定包含",
+          "items": [
+            "Cream of Mushroom Soup | 蘑菇忌廉汤",
+            "Garlic Breads | 蒜香面包"
+          ],
+          "key": "soup",
+          "pick": 2,
+          "required": true
+        },
+        {
+          "title": "Salad",
+          "titleZh": "沙拉",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Garden Salad | 田园沙拉",
+            "Coleslaw Salad | 卷心菜沙拉"
+          ],
+          "key": "salad",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Local Delights",
+          "titleZh": "主食 - 本地风味",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Butter Rice | 牛油饭",
+            "Nasi Lemak | 椰浆饭",
+            "La Taste Signature Fried Rice | La Taste 招牌炒饭",
+            "Tomato Rice | 番茄饭"
+          ],
+          "key": "localCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Western",
+          "titleZh": "主食 - 西式",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Spaghetti Napolitana",
+            "Asam Pedas Spaghetti | 亚参辣味意大利面",
+            "Spaghetti Aglio-Olio | 蒜香橄榄油意大利面",
+            "Alfredo Pasta | 白酱意大利面"
+          ],
+          "key": "westernCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Chicken",
+          "titleZh": "鸡肉类",
+          "key": "chicken",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Peppery Roasted Chicken | 黑胡椒烤鸡",
+            "Teriyaki Chicken Drummet | 照烧鸡翅根",
+            "Ayam Goreng Berempah | 马来香料炸鸡",
+            "Rich Aromatic Curry Chicken | 浓香咖喱鸡",
+            "Fried Chicken Tender with Thai Sauce or Mayo | 炸鸡柳配泰式酱或美乃滋"
+          ]
+        },
+        {
+          "title": "Fish",
+          "titleZh": "鱼类",
+          "key": "fish",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Crispy Fish Fillets | 香脆鱼柳",
+            "Thai Style Fish Fillets | 泰式鱼柳",
+            "Cereal Fish Fillets | 麦片鱼柳"
+          ]
+        },
+        {
+          "title": "Sides",
+          "titleZh": "小吃与配菜",
+          "key": "sides",
+          "note": "Pick 3 | 选 3 项",
+          "pick": 3,
+          "required": true,
+          "items": [
+            "Tempura Nugget | 天妇罗鸡块",
+            "Mini Sausages | 迷你香肠",
+            "Takoyaki Ball | 章鱼烧",
+            "Curry Fish Ball | 咖喱鱼丸",
+            "Mantou with Curry or Condensed Milk | 馒头配咖喱或炼奶",
+            "Samosa | 咖喱角",
+            "Spring Roll | 春卷",
+            "French Fries | 薯条",
+            "Fried Dumplings | 炸水饺",
+            "Fried Breaded Scallop | 炸扇贝",
+            "Taiwan Sausage | 台湾香肠",
+            "Penang Lobak | 槟城五香卷",
+            "Money Pocket | 钱袋",
+            "Fried Prawn Roll | 炸虾卷",
+            "Mini Tuna Toast | 迷你吞拿吐司",
+            "Assorted Dimsum (+RM3 / pax) | 杂锦点心（+RM3 / 人）"
+          ]
+        },
+        {
+          "title": "Dessert - Normal Menu",
+          "titleZh": "甜品 - 普通菜单",
+          "key": "normalDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Belgian Waffle | 比利时华夫饼",
+            "Assorted Fruit Tart | 杂锦水果塔",
+            "Tofu Pudding | 豆腐花",
+            "Mango Pudding | 芒果布丁",
+            "Iced Jelly | 冰果冻",
+            "Aiyu Jelly | 爱玉冰"
+          ]
+        },
+        {
+          "title": "Dessert - Premium Menu",
+          "titleZh": "甜品 - 高级菜单",
+          "key": "premiumDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Fruits Rojak | 水果 Rojak",
+            "Creme Brulee | 焦糖布蕾",
+            "Opera Cake | 歌剧院蛋糕",
+            "Creme Brulee Cheese Tart | 焦糖布蕾芝士塔",
+            "Strawberry Panna Cotta | 草莓奶冻",
+            "Blueberry Panna Cotta | 蓝莓奶冻"
+          ]
+        },
+        {
+          "title": "Beverage",
+          "titleZh": "饮料",
+          "key": "beverage",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Iced Lemon Tea | 冰柠檬茶",
+            "Iced Peach Tea | 冰桃茶",
+            "Orange Juice | 橙汁",
+            "Blackcurrant Juice | 黑加仑汁"
+          ]
+        }
+      ]
+    },
+    "Basic Package B": {
+      "label": "Basic Package B / 基础配套 B",
+      "note": "Same food selection as Basic Package A, with upgraded decoration and event setup. | 食物选择与 A 相同，布置与活动配套升级。",
+      "sections": [
+        {
+          "title": "Soup",
+          "titleZh": "汤品",
+          "note": "Included | 固定包含",
+          "items": [
+            "Cream of Mushroom Soup | 蘑菇忌廉汤",
+            "Garlic Breads | 蒜香面包"
+          ],
+          "key": "soup",
+          "pick": 2,
+          "required": true
+        },
+        {
+          "title": "Salad",
+          "titleZh": "沙拉",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Garden Salad | 田园沙拉",
+            "Coleslaw Salad | 卷心菜沙拉"
+          ],
+          "key": "salad",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Local Delights",
+          "titleZh": "主食 - 本地风味",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Butter Rice | 牛油饭",
+            "Nasi Lemak | 椰浆饭",
+            "La Taste Signature Fried Rice | La Taste 招牌炒饭",
+            "Tomato Rice | 番茄饭"
+          ],
+          "key": "localCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Western",
+          "titleZh": "主食 - 西式",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Spaghetti Napolitana",
+            "Asam Pedas Spaghetti | 亚参辣味意大利面",
+            "Spaghetti Aglio-Olio | 蒜香橄榄油意大利面",
+            "Alfredo Pasta | 白酱意大利面"
+          ],
+          "key": "westernCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Chicken",
+          "titleZh": "鸡肉类",
+          "key": "chicken",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Peppery Roasted Chicken | 黑胡椒烤鸡",
+            "Teriyaki Chicken Drummet | 照烧鸡翅根",
+            "Ayam Goreng Berempah | 马来香料炸鸡",
+            "Rich Aromatic Curry Chicken | 浓香咖喱鸡",
+            "Fried Chicken Tender with Thai Sauce or Mayo | 炸鸡柳配泰式酱或美乃滋"
+          ]
+        },
+        {
+          "title": "Fish",
+          "titleZh": "鱼类",
+          "key": "fish",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Crispy Fish Fillets | 香脆鱼柳",
+            "Thai Style Fish Fillets | 泰式鱼柳",
+            "Cereal Fish Fillets | 麦片鱼柳"
+          ]
+        },
+        {
+          "title": "Sides",
+          "titleZh": "小吃与配菜",
+          "key": "sides",
+          "note": "Pick 3 | 选 3 项",
+          "pick": 3,
+          "required": true,
+          "items": [
+            "Tempura Nugget | 天妇罗鸡块",
+            "Mini Sausages | 迷你香肠",
+            "Takoyaki Ball | 章鱼烧",
+            "Curry Fish Ball | 咖喱鱼丸",
+            "Mantou with Curry or Condensed Milk | 馒头配咖喱或炼奶",
+            "Samosa | 咖喱角",
+            "Spring Roll | 春卷",
+            "French Fries | 薯条",
+            "Fried Dumplings | 炸水饺",
+            "Fried Breaded Scallop | 炸扇贝",
+            "Taiwan Sausage | 台湾香肠",
+            "Penang Lobak | 槟城五香卷",
+            "Money Pocket | 钱袋",
+            "Fried Prawn Roll | 炸虾卷",
+            "Mini Tuna Toast | 迷你吞拿吐司",
+            "Assorted Dimsum (+RM3 / pax) | 杂锦点心（+RM3 / 人）"
+          ]
+        },
+        {
+          "title": "Dessert - Normal Menu",
+          "titleZh": "甜品 - 普通菜单",
+          "key": "normalDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Belgian Waffle | 比利时华夫饼",
+            "Assorted Fruit Tart | 杂锦水果塔",
+            "Tofu Pudding | 豆腐花",
+            "Mango Pudding | 芒果布丁",
+            "Iced Jelly | 冰果冻",
+            "Aiyu Jelly | 爱玉冰"
+          ]
+        },
+        {
+          "title": "Dessert - Premium Menu",
+          "titleZh": "甜品 - 高级菜单",
+          "key": "premiumDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Fruits Rojak | 水果 Rojak",
+            "Creme Brulee | 焦糖布蕾",
+            "Opera Cake | 歌剧院蛋糕",
+            "Creme Brulee Cheese Tart | 焦糖布蕾芝士塔",
+            "Strawberry Panna Cotta | 草莓奶冻",
+            "Blueberry Panna Cotta | 蓝莓奶冻"
+          ]
+        },
+        {
+          "title": "Beverage",
+          "titleZh": "饮料",
+          "key": "beverage",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Iced Lemon Tea | 冰柠檬茶",
+            "Iced Peach Tea | 冰桃茶",
+            "Orange Juice | 橙汁",
+            "Blackcurrant Juice | 黑加仑汁"
+          ]
+        }
+      ]
+    },
+    "Premium Menu C": {
+      "label": "Premium Menu C / 高级菜单 C",
+      "note": "Food x 11 items, premium dessert x 3 items, beverage x 1. Includes Canape and Seafood Selection. | 主食/小吃 11 项、高级甜品 3 项、饮料 1 项，包含 Canape 和海鲜选择。",
+      "sections": [
+        {
+          "title": "Canape",
+          "titleZh": "精致小点",
+          "note": "Premium packages: pick 1 | 高级配套选 1 项",
+          "items": [
+            "Tuna Tart Egg Mayo Sandwiches | 吞拿蛋黄酱小三文治",
+            "Mini Burgers Mushroom Baguette | 迷你汉堡蘑菇法棍",
+            "Mini Pizza | 迷你披萨"
+          ],
+          "key": "canape",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Chicken",
+          "titleZh": "鸡肉类",
+          "key": "chicken",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Peppery Roasted Chicken with Roasted Vegetables & Mashed Potatoes | 黑胡椒烤鸡配烤蔬菜和薯泥",
+            "Teriyaki Chicken Drummet | 照烧鸡翅根",
+            "Korean Chicken Drummet | 韩式鸡翅根",
+            "Ayam Goreng Berempah | 马来香料炸鸡",
+            "Rich Aromatic Curry Chicken | 浓香咖喱鸡",
+            "Fried Chicken Tender with Thai Sauce or Mayo | 炸鸡柳配泰式酱或美乃滋"
+          ]
+        },
+        {
+          "title": "Seafood Selection",
+          "titleZh": "海鲜选择",
+          "key": "seafood",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Crispy Fish Fillets | 香脆鱼柳",
+            "Thai Style Fish Fillets | 泰式鱼柳",
+            "Cereal Fish Fillets | 麦片鱼柳",
+            "Pickled Vegetables Fish with Rice Vermicelli | 酸菜鱼米粉",
+            "Cereal Prawns | 麦片虾",
+            "Curry Prawns | 咖喱虾"
+          ]
+        },
+        {
+          "title": "Gourmet Bites and Sides",
+          "titleZh": "小吃与配菜",
+          "key": "sides",
+          "note": "Pick 4 | 选 4 项",
+          "pick": 4,
+          "required": true,
+          "items": [
+            "Tempura Nugget | 天妇罗鸡块",
+            "Mini Sausages | 迷你香肠",
+            "Takoyaki Ball | 章鱼烧",
+            "Curry Fish Ball | 咖喱鱼丸",
+            "Mantou with Curry or Condensed Milk | 馒头配咖喱或炼奶",
+            "Samosa | 咖喱角",
+            "Spring Roll | 春卷",
+            "French Fries | 薯条",
+            "Fried Dumplings | 炸水饺",
+            "Fried Breaded Scallop | 炸扇贝",
+            "Taiwan Sausage | 台湾香肠",
+            "Penang Lobak | 槟城五香卷",
+            "Money Pocket | 钱袋",
+            "Fried Prawn Roll | 炸虾卷",
+            "Mini Tuna Toast | 迷你吞拿吐司",
+            "Assorted Dimsum (+RM3 / pax) | 杂锦点心（+RM3 / 人）"
+          ]
+        },
+        {
+          "title": "Soup",
+          "titleZh": "汤品",
+          "note": "Included | 固定包含",
+          "items": [
+            "Cream of Mushroom Soup | 蘑菇忌廉汤",
+            "Garlic Breads | 蒜香面包"
+          ],
+          "key": "soup",
+          "pick": 2,
+          "required": true
+        },
+        {
+          "title": "Salad",
+          "titleZh": "沙拉",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Garden Salad | 田园沙拉",
+            "Coleslaw Salad | 卷心菜沙拉"
+          ],
+          "key": "salad",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Local Delights",
+          "titleZh": "主食 - 本地风味",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Butter Rice | 牛油饭",
+            "Nasi Lemak | 椰浆饭",
+            "La Taste Signature Fried Rice | La Taste 招牌炒饭",
+            "Tomato Rice | 番茄饭"
+          ],
+          "key": "localCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Western",
+          "titleZh": "主食 - 西式",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Spaghetti Napolitana",
+            "Asam Pedas Spaghetti | 亚参辣味意大利面",
+            "Spaghetti Aglio-Olio | 蒜香橄榄油意大利面",
+            "Alfredo Pasta | 白酱意大利面"
+          ],
+          "key": "westernCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Dessert - Normal Menu",
+          "titleZh": "甜品 - 普通菜单",
+          "key": "normalDessert",
+          "note": "Pick 2 | 选 2 项",
+          "pick": 2,
+          "required": true,
+          "items": [
+            "Belgian Waffle | 比利时华夫饼",
+            "Assorted Fruit Tart | 杂锦水果塔",
+            "Tofu Pudding | 豆腐花",
+            "Mango Pudding | 芒果布丁",
+            "Iced Jelly | 冰果冻",
+            "Aiyu Jelly | 爱玉冰"
+          ]
+        },
+        {
+          "title": "Dessert - Premium Menu",
+          "titleZh": "甜品 - 高级菜单",
+          "key": "premiumDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Fruits Rojak | 水果 Rojak",
+            "Creme Brulee | 焦糖布蕾",
+            "Opera Cake | 歌剧院蛋糕",
+            "Creme Brulee Cheese Tart | 焦糖布蕾芝士塔",
+            "Strawberry Panna Cotta | 草莓奶冻",
+            "Blueberry Panna Cotta | 蓝莓奶冻"
+          ]
+        },
+        {
+          "title": "Beverage",
+          "titleZh": "饮料",
+          "key": "beverage",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Mint Lemonade | 薄荷柠檬水",
+            "Iced Lemon Tea | 冰柠檬茶",
+            "Iced Peach Tea | 冰桃茶",
+            "Blackcurrant Juice | 黑加仑汁",
+            "Orange Juice | 橙汁",
+            "Mint Mojito (+RM3 / pax) | 薄荷 Mojito（+RM3 / 人）"
+          ]
+        }
+      ]
+    },
+    "Premium Menu D": {
+      "label": "Premium Menu D / 高级菜单 D",
+      "note": "Same premium food selection as Premium Menu C, with upgraded decoration and event setup. | 食物选择与 C 相同，布置与活动配套升级。",
+      "sections": [
+        {
+          "title": "Canape",
+          "titleZh": "精致小点",
+          "note": "Premium packages: pick 1 | 高级配套选 1 项",
+          "items": [
+            "Tuna Tart Egg Mayo Sandwiches | 吞拿蛋黄酱小三文治",
+            "Mini Burgers Mushroom Baguette | 迷你汉堡蘑菇法棍",
+            "Mini Pizza | 迷你披萨"
+          ],
+          "key": "canape",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Chicken",
+          "titleZh": "鸡肉类",
+          "key": "chicken",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Peppery Roasted Chicken with Roasted Vegetables & Mashed Potatoes | 黑胡椒烤鸡配烤蔬菜和薯泥",
+            "Teriyaki Chicken Drummet | 照烧鸡翅根",
+            "Korean Chicken Drummet | 韩式鸡翅根",
+            "Ayam Goreng Berempah | 马来香料炸鸡",
+            "Rich Aromatic Curry Chicken | 浓香咖喱鸡",
+            "Fried Chicken Tender with Thai Sauce or Mayo | 炸鸡柳配泰式酱或美乃滋"
+          ]
+        },
+        {
+          "title": "Seafood Selection",
+          "titleZh": "海鲜选择",
+          "key": "seafood",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Crispy Fish Fillets | 香脆鱼柳",
+            "Thai Style Fish Fillets | 泰式鱼柳",
+            "Cereal Fish Fillets | 麦片鱼柳",
+            "Pickled Vegetables Fish with Rice Vermicelli | 酸菜鱼米粉",
+            "Cereal Prawns | 麦片虾",
+            "Curry Prawns | 咖喱虾"
+          ]
+        },
+        {
+          "title": "Gourmet Bites and Sides",
+          "titleZh": "小吃与配菜",
+          "key": "sides",
+          "note": "Pick 4 | 选 4 项",
+          "pick": 4,
+          "required": true,
+          "items": [
+            "Tempura Nugget | 天妇罗鸡块",
+            "Mini Sausages | 迷你香肠",
+            "Takoyaki Ball | 章鱼烧",
+            "Curry Fish Ball | 咖喱鱼丸",
+            "Mantou with Curry or Condensed Milk | 馒头配咖喱或炼奶",
+            "Samosa | 咖喱角",
+            "Spring Roll | 春卷",
+            "French Fries | 薯条",
+            "Fried Dumplings | 炸水饺",
+            "Fried Breaded Scallop | 炸扇贝",
+            "Taiwan Sausage | 台湾香肠",
+            "Penang Lobak | 槟城五香卷",
+            "Money Pocket | 钱袋",
+            "Fried Prawn Roll | 炸虾卷",
+            "Mini Tuna Toast | 迷你吞拿吐司",
+            "Assorted Dimsum (+RM3 / pax) | 杂锦点心（+RM3 / 人）"
+          ]
+        },
+        {
+          "title": "Soup",
+          "titleZh": "汤品",
+          "note": "Included | 固定包含",
+          "items": [
+            "Cream of Mushroom Soup | 蘑菇忌廉汤",
+            "Garlic Breads | 蒜香面包"
+          ],
+          "key": "soup",
+          "pick": 2,
+          "required": true
+        },
+        {
+          "title": "Salad",
+          "titleZh": "沙拉",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Garden Salad | 田园沙拉",
+            "Coleslaw Salad | 卷心菜沙拉"
+          ],
+          "key": "salad",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Local Delights",
+          "titleZh": "主食 - 本地风味",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Butter Rice | 牛油饭",
+            "Nasi Lemak | 椰浆饭",
+            "La Taste Signature Fried Rice | La Taste 招牌炒饭",
+            "Tomato Rice | 番茄饭"
+          ],
+          "key": "localCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Carbs - Western",
+          "titleZh": "主食 - 西式",
+          "note": "Pick 1 | 选 1 项",
+          "items": [
+            "Spaghetti Napolitana",
+            "Asam Pedas Spaghetti | 亚参辣味意大利面",
+            "Spaghetti Aglio-Olio | 蒜香橄榄油意大利面",
+            "Alfredo Pasta | 白酱意大利面"
+          ],
+          "key": "westernCarbs",
+          "pick": 1,
+          "required": true
+        },
+        {
+          "title": "Dessert - Normal Menu",
+          "titleZh": "甜品 - 普通菜单",
+          "key": "normalDessert",
+          "note": "Pick 2 | 选 2 项",
+          "pick": 2,
+          "required": true,
+          "items": [
+            "Belgian Waffle | 比利时华夫饼",
+            "Assorted Fruit Tart | 杂锦水果塔",
+            "Tofu Pudding | 豆腐花",
+            "Mango Pudding | 芒果布丁",
+            "Iced Jelly | 冰果冻",
+            "Aiyu Jelly | 爱玉冰"
+          ]
+        },
+        {
+          "title": "Dessert - Premium Menu",
+          "titleZh": "甜品 - 高级菜单",
+          "key": "premiumDessert",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Fruits Rojak | 水果 Rojak",
+            "Creme Brulee | 焦糖布蕾",
+            "Opera Cake | 歌剧院蛋糕",
+            "Creme Brulee Cheese Tart | 焦糖布蕾芝士塔",
+            "Strawberry Panna Cotta | 草莓奶冻",
+            "Blueberry Panna Cotta | 蓝莓奶冻"
+          ]
+        },
+        {
+          "title": "Beverage",
+          "titleZh": "饮料",
+          "key": "beverage",
+          "note": "Pick 1 | 选 1 项",
+          "pick": 1,
+          "required": true,
+          "items": [
+            "Mint Lemonade | 薄荷柠檬水",
+            "Iced Lemon Tea | 冰柠檬茶",
+            "Iced Peach Tea | 冰桃茶",
+            "Blackcurrant Juice | 黑加仑汁",
+            "Orange Juice | 橙汁",
+            "Mint Mojito (+RM3 / pax) | 薄荷 Mojito（+RM3 / 人）"
+          ]
+        }
+      ]
+    }
+  }
 }

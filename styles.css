@@ -238,6 +238,22 @@ a {
   font-weight: 800;
 }
 
+.menu-package-panel {
+  display: grid;
+  gap: 10px;
+  width: min(1040px, 100%);
+  margin: 0 auto 16px;
+  padding: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.menu-package-panel p {
+  margin: 0;
+  color: var(--muted);
+  font-weight: 750;
+}
+
 .highlight-grid,
 .package-grid,
 .accordion,
@@ -357,6 +373,14 @@ a {
   transform: translateY(-1px);
 }
 
+.package-pick {
+  width: 100%;
+  margin-top: 18px;
+  color: var(--ink);
+  border-color: var(--line);
+  background: var(--cream);
+}
+
 .accordion {
   display: grid;
   gap: 10px;
@@ -393,10 +417,31 @@ summary::-webkit-details-marker {
   font-weight: 800;
 }
 
-summary span {
+.summary-rule {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
   color: var(--muted);
   font-size: 0.82rem;
   font-weight: 700;
+}
+
+.choice-count {
+  display: inline-grid;
+  place-items: center;
+  min-width: 48px;
+  min-height: 26px;
+  padding: 3px 8px;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 0.78rem;
+}
+
+.choice-count.complete {
+  color: white;
+  background: #2d7d4f;
+  border-color: #2d7d4f;
 }
 
 summary::after {
@@ -448,6 +493,10 @@ details[open] summary::after {
   min-height: 18px;
   margin: 2px 0 0;
   accent-color: var(--gold);
+}
+
+.menu-choice input:disabled + span {
+  opacity: 0.42;
 }
 
 .menu-choice:has(input:checked) {
