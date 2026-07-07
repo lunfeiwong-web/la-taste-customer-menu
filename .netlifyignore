@@ -1,0 +1,6 @@
+README.txt
+*.zip
+.gitignore
+.nojekyll
+.netlify/
+.git/
