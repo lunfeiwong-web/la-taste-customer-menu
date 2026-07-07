@@ -1,6 +1,9 @@
 La Taste x 3 Yue 自助餐活动菜单网站
 
 顾客公开链接：
+https://la-taste-customer-menu.netlify.app/
+
+备用 GitHub Pages 链接：
 https://lunfeiwong-web.github.io/la-taste-customer-menu/
 
 这个网站是纯静态网站，免费托管在 GitHub Pages。
