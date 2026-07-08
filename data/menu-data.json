@@ -181,9 +181,11 @@
       "titleZh": "精致小点",
       "note": "Premium packages: pick 1 | 高级配套选 1 项",
       "items": [
-        "Tuna Tart Egg Mayo Sandwiches | 吞拿蛋黄酱小三文治",
-        "Mini Burgers Mushroom Baguette | 迷你汉堡蘑菇法棍",
-        "Mini Pizza | 迷你披萨"
+        "Tuna Tart | 吞拿塔",
+        "Mini Burgers | 迷你汉堡",
+        "Mini Pizza | 迷你披萨",
+        "Egg Mayo Sandwiches | 蛋黄酱三文治",
+        "Mushroom Baguette | 蘑菇法棍"
       ]
     },
     {
@@ -615,11 +617,13 @@
         {
           "title": "Canape",
           "titleZh": "精致小点",
-          "note": "Premium packages: pick 1 | 高级配套选 1 项",
+          "note": "Pick 1 | 选 1 项",
           "items": [
-            "Tuna Tart Egg Mayo Sandwiches | 吞拿蛋黄酱小三文治",
-            "Mini Burgers Mushroom Baguette | 迷你汉堡蘑菇法棍",
-            "Mini Pizza | 迷你披萨"
+            "Tuna Tart | 吞拿塔",
+            "Mini Burgers | 迷你汉堡",
+            "Mini Pizza | 迷你披萨",
+            "Egg Mayo Sandwiches | 蛋黄酱三文治",
+            "Mushroom Baguette | 蘑菇法棍"
           ],
           "key": "canape",
           "pick": 1,
@@ -792,11 +796,13 @@
         {
           "title": "Canape",
           "titleZh": "精致小点",
-          "note": "Premium packages: pick 1 | 高级配套选 1 项",
+          "note": "Pick 1 | 选 1 项",
           "items": [
-            "Tuna Tart Egg Mayo Sandwiches | 吞拿蛋黄酱小三文治",
-            "Mini Burgers Mushroom Baguette | 迷你汉堡蘑菇法棍",
-            "Mini Pizza | 迷你披萨"
+            "Tuna Tart | 吞拿塔",
+            "Mini Burgers | 迷你汉堡",
+            "Mini Pizza | 迷你披萨",
+            "Egg Mayo Sandwiches | 蛋黄酱三文治",
+            "Mushroom Baguette | 蘑菇法棍"
           ],
           "key": "canape",
           "pick": 1,
